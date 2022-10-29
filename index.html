@@ -1,50 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title> My website</title>
-<h5> franktega</h5>
+  <h5> franktega</h5>
 </head>
 <style>
 	body{
-		background-color: lightgrey;}
+		background-color: lightgrey}
 		#mane{
-		background-color:lightblue;
-}
+      background-color:lightblue;
+    }
+  .colorpicker:{
+    float:right;
+  }
+  ul.topnav li{
+      float:right;
+      list-style:none;
+    }
+    nav li a{
+    text-decoration:none;
+      min-height:16px;
+text-align:center;
+      padding:20px;
+      text-transformation:uppercase;
+
+    }
+			
 
 </style>
 
-<body>
-	
+
+
+  <nav>
+    <ul class="topnav">
+      <li>
+        <a href="https://login.tegafrank.repl.co">LOGIN</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
 	<div class="container"  id="mane" >
-<form  action="https://success.tegafrank.repl.co" >
-	<h1> Login</h1>
-  <hr>
+    <form>
+		<table border="5" cellspacing="50">
+
+	<h1> Sign Up</h1>
+	<hr>
 	
-	<table>
+	<table id="mane">
 		
-		
-	<tr>
-<td>Email:</td>
-<td><input type=”email” id="txtemail"
- placeholder="Enter Email" required/></td>
-		
-</tr>
-<tr>
-<td>Password:</td>
-<td><input type=”Password” 
-id="txtPassword" placeholder="Enter Password" required/></td>
+		<tr>
+			
+<td>    <label for="fname">First Name</label>
+<input type=”name”  placeholder=first_name name=””></td>
+
+			
+<td><label for="lname">Last Name</label>
+<input type=”name”  placeholder=last_name name=””></td>
 		</tr>
+	
+	<tr>
+	
+<td><label for="D O B">Date of Birth</label>
+  <input type="date">
+</td>
+	
+
+<td><label for="Pnumber">Phone Number</label>
+<input type=”number” placeholder=phone_number name=””></td>
+		</tr>
+	
+	<tr>
+
+<td><label for="email">Email</label>
+<input type=”email” placeholder=email name=””></td>
 		
 
-		
-	</table>
-</form> 
 
+<td><label for="fname">Password</label>
+<input type=”Password” placeholder=Password name=””></td>
+		</tr>
+		</table>
+	
+		Gender:
+<input type="checkbox" name="Male" value="Male"> Male<input type="checkbox" name="Female" value="Female"> Female
 <br>
-<button type="submit" form="nameform" value="Submit"><a href="   https://success.tegafrank.repl.co">
-  </a>LOGIN</button>
 
-    <a href="   https://success.tegafrank.repl.co">
-  </a>
+	<label for="colorpicker">Pick your favorite color:</label>
+   <input type="color" id="colorpicker" value="#0000ff">
+
+</form> 
+  </div>
+<br>
+<button 
+type="submit" form="nameform" value="Submit">Submit</button>
+</div>
+  
 </body>
 </html>
